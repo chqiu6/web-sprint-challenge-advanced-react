@@ -29,14 +29,25 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+Stateful class components need a extend from the class component to React.Component, a constructor, super and a render. A constructor would set up state, a super to use "this", and our life cycle render method to render UI from the DOM.  Example down below : 
+class <name of Component> extends to React.Component{
+  constructor(){
+    super();
+    this.state = []
+  };
+}
 
 2. Describe the different phases of the component lifecycle.
+First there's a mounting then updating and finally there's unmounting. Each lifecycle phases do exactly what each are named. The animal lifecycle begins by being born, growth and finally death. This analogy explains how animal lifecycle and component lifecycle works. The mounting phase would be where you start up your component, updating phase would be where you'll update our component state, and finally unmounting phase is when our component is removed from the screen.
 
 3. Demonstrate an understanding of class component lifecycle methods.
+componentDidMount would be at the mounting phase and useEffect is basically like our lifecycle. We can get our data during componentDidMount using axios call. Our render would display our react elements from our data we called like what we've done in our plantlist.js file.
 
 4. Define stateful logic.
+Stateful logic is behaviors or logics in our components will have. There can be functions in our component like it'll update our state or a event handler. We can think of stateful logic as what we'll do with our useState.
 
 5. Describe how to test a React component with React Testing Library.
+There are three stages to do testing with the React Testing Library. They're called the AAA. Arrange, Act and Assert are what the AAA stands for. First Arrange would be where we'll set up our codes that are being tested. Then Act would be where we'll call our methods or function to return a result from our test. Finally Assert would be where we'll assert our result and see if our expected result matches our actual result. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
